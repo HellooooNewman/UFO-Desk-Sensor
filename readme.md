@@ -27,10 +27,25 @@ Coming soon!
 ## Results
 Now when you move your desk up or down the lights on the ufo will light up
 
-## Future Improvements
-- Light color changes depending on if it's moving up or down
-- Little speaker on it?
-- Rotating parts?
+## Dev testing
+SSH for Raspberry Pi
+*note* You'll need to find your own pi's ip address
+```
+ssh pi@192.168.50.78
+ssh pi@192.168.0.172
+```
+
+Turn on Program
+```
+cd Documents/UFO-Desk-Sensor
+sudo python3 dtc3.py
+```
+
+Light Test
+```
+cd Documents/rpi_ws281x/python/examples
+sudo python3 strandtest.py -c
+```
 
 ## Final Thoughts
 I could have made this cheaper and easier with an Ardunio and a 
